@@ -11,7 +11,13 @@ const reviewCode  = require("./routes/review");
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://ai-code-reviewer-omega-neon.vercel.app',
+  ],
+  credentials: true
+}));
 
 // Rate Limiter
 const limiter = rateLimit({
