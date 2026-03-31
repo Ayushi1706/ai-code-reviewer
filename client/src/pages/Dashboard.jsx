@@ -248,7 +248,7 @@ console.log('fixModalIssue:', fixModalIssue);
             </div>
 
             {/* Right panel */}
-            <div className="w-80 bg-[#1A1A1A] border-l border-[#2A2A2A] overflow-y-auto flex-shrink-0 p-4 space-y-4">
+            <div className="w-80 bg-[#1A1A1A] border-l border-[#2A2A2A] flex-shrink-0 p-4 space-y-4 overflow-y-auto h-screen sticky top-0">
               {/* Fix result — FIRST so it's visible immediately */}
   {fixedCode && fixModalIssue && (
     <div className="bg-[#222] border border-[#10B981]/30 rounded-xl p-4 space-y-3">
